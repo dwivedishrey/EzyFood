@@ -1,0 +1,122 @@
+ *{
+    margin: 0;
+    padding:0px;
+    box-sizing: border-box;
+ }
+ body{
+    /* background-color: aqua; */
+    /* background-image: url("images/56meals.jpg");
+    background-size: cover; */
+ }
+ .container{
+   display:flex;
+ }
+ .f-img{
+   width:50%;
+ }
+ .img{
+   width:100%;
+   height:100%;
+   /* padding:84px;
+   margin-left:56px; */
+   /* border-radius: 100px; */
+   box-shadow:rgba(0, 0, 0, 0.8)
+ }
+ h2{
+    text-align: center;
+    margin-top: 45px;
+    font-size: 2.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ }
+ input{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.8);
+ }
+ .customer-details{
+    display:flex;
+   width:50%;
+   /* width:100%; */
+    justify-content: center;
+    background-color: aliceblue;
+    align-items: center;
+    flex-direction: column;
+    /* height:100vh; */
+ }
+ label{
+    display: block;
+    border-bottom: 2px solid chocolate;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+ }
+ form{
+    margin-top: 34px;
+ }
+ /* .name{
+   display:flex;
+   justify-content: space-between;
+   flex-direction: column;
+ } */
+ .name input{
+    margin:32px 12px ;
+    margin-right:21px;
+    height:38px;
+    width:200px;
+    padding: 12px;
+    /* display: block; */
+ }
+ .address input{
+    display:block;
+    height:38px;
+    width:100%;
+    padding: 12px;
+    margin:32px 0px;
+ }
+ .city{
+   display:flex;
+   justify-content: space-between;
+ }
+ .city input{
+     width:40%
+ }
+.contact input{
+    display:block;
+    height:38px;
+    width:100%;
+    padding: 12px;
+    margin:32px 0px;
+}
+.email input{
+    display:block;
+    height:38px;
+    width:100%;
+    padding: 12px;
+    margin:32px 0px;
+}
+.submit input{
+   display:block;
+   height:38px;
+   width:100%;
+   padding: 12px;
+   margin:32px 0px;
+   font-family: cursive;
+   background-color: cornflowerblue;
+   color:white;
+}
+.submit input:hover{
+   background-color: chocolate;
+   transition:0.6s;
+}
+@media(max-width:912px){
+   .f-img{
+      display:none;
+   }
+   .customer-details{
+      width:100%;
+      background-image: url("images/56meals.jpg");
+      background-size: cover;
+      padding:5%;
+      color:black;
+   }
+}

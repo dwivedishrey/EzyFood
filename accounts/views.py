@@ -8,6 +8,7 @@ import urllib
 import http.client
 
 from django.conf import settings
+from django.contrib import sessions
 from django.contrib.auth import authenticate, login
 
 # Create your views here.
@@ -33,7 +34,7 @@ def send_otp(mobile , otp):
 
 def login_attempt(request):
     if request.method == 'POST':
-        mobile = request.POST.get('mobile')
+        mobile = str(request.POST.get('mobile'))
         
         user = Profile.objects.filter(mobile = mobile).first()
         
@@ -46,8 +47,8 @@ def login_attempt(request):
         user.save()
         print(otp)
         send_otp(mobile , otp)
-        request.session['mobile'] = mobile
-        return redirect('login_otp')        
+        request.session['mobile']=mobile
+        return redirect('login_otp')       
     return render(request,'login.html')
 
 

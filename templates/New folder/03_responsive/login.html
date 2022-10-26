@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+  {% block content %}
+    <div class="bigcontainer">
+    <div class="bcontainer">
+            <img src="images/loginimg.jpg" alt="loginimg" class="logim box" >
+        <div class="lodetail box" >
+            <div>
+            <h1>want to order something !</h1>
+            <h2>login now</h2>
+            <form action="php" id="form" method='post'>
+              {% csrf_token %}
+                <input type="text" class="input" id="username" placeholder="username" required>
+                <input type="text" class="input" id="password" placeholder="password" required>
+                <button class="input" id="logbtn">
+                    LOGIN
+                </button>
+                <p class="noac">don't have an account yet <a class="signhr">signup</a> now</p>
+            </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    {%endblock%}
+    <!-- <div class="container active">
+             <h2>SignIn</h2>
+             <div class="formbx">
+                <form action="#">
+                  <div class="inputbx">
+                    <label >Name:</label>
+                    <input type="text" placeholder="Name">
+                  </div>
+                  <div class="inputbx">
+                    <label >Email:</label>
+                    <input type="email" placeholder="xyz1234@gmail.com">
+                  </div>
+                  <div class="inputbx">
+                    <label >Mobile Number:</label>
+                    <input type="text" placeholder="9876754321">
+                  </div>
+                  <div class="inputbx">
+                    <button class="btn-1">Cancel</button>
+                    <button class="btn-1">ontinue</button>
+                   
+                  </div>
+                </form>
+             </div>
+    </div>
+    <script src="login.js"></script> -->
+</body>
+</html>

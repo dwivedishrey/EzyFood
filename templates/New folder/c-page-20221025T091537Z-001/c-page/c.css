@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #3C4048; */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.section-1 {
+    width: 42%;
+
+}
+
+.img-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.section-2 {
+    width: 16%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: #FFD700;
+
+}
+
+.section-3 {
+    width: 42%;
+}
+
+.c-name {
+    /* transform: rotate(-90deg); */
+}
+
+p {
+    font-size: 2;
+    display: block;
+}
+
+.recipie {
+    background-color: #3C4048;
+    display: flex;
+    margin-top: 0;
+    
+}
+
+.hed {
+    height: 206px;
+    width: 402px;
+    /* border: 2px solid red; */
+    margin-left: 240px;
+    margin-right: 72px;
+    margin-top: 419px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img {
+    height: 490px;
+    width: 318px;
+    /* border: 2px solid red; */
+    margin: 60px 70px;
+}
+
+.resimg {
+    width: 100%;
+    height: 100%;
+}
+
+.des {
+    
+background-color: #FFD700;
+    
+/* border: 2px solid red; */
+    
+width: 25%;
+    
+margin-right: 46px;
+}
+    
+
+
+.rec{
+    
+color: white;
+margin-top: 26%;
+margin-bottom: 8%;
+margin-right: 8%;
+margin-left: 8%;
+font-size: 21px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding:18px;
+}
+
+.break1{
+background-image:url("images/Palak-Paratha.webp");
+background-size: cover;
+display:flex;
+flex-direction: column;
+flex-wrap: wrap;
+
+}
+
+
+.Breakfast{
+    margin-bottom: 1%;
+    border: 10px solid #FFD700;
+    width: 27%;
+    margin-top: 3%;
+    margin-left: 9%;
+color: aliceblue;
+background-color: black;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 214%;
+}
+.Healthy{
+    margin-bottom: 1%;
+    /* border: 2px solid red; */
+    width: 27%;
+    margin-top: 4%;
+    margin-left: 9%;
+    background-color: #FFD700;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 214%;
+}
+.Breakfast1{
+    margin-top: 11%;
+    margin-bottom: 14%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding:3%;
+}
+
+
+.fresh{
+background-size: cover;
+    height: 300px;
+    background-image: url("images/litti_chokha.jpg");
+color: aliceblue;
+display: flex;
+
+flex-wrap: wrap;
+
+}
+
+.fresh1{
+    margin-top: 81px;
+    margin-left: 60%;
+    font-size: 20px;
+}
+
+
+
+
+.review{
+background-color:  #292930;
+display: flex;
+flex-wrap: wrap;
+}
+
+.review1{
+    width: 50%;
+    /* height: 40%; */
+}
+.review2{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:34px;
+    font-size: 38px;
+    color:aliceblue;
+    /* height: 40%; */
+}
+.review4{
+height:800px;
+width: 400px;
+
+}
+.review5{
+    color: aliceblue;
+}
+.contact{
+    background-color: #292930;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.img-11{
+    height: 100%;
+    width:100%;
+}
+/* .img-22{
+    height: 21%;
+
+} */
+
+.c-des{
+
+    width:400px;
+    margin:21px;
+    padding:18px;
+    color: aliceblue;
+    text-align: center;
+}
+.c-img{
+    height: 400px;
+    width: 300px;
+}
+.c-image{
+    width:100%;
+    height:100%;
+}
+.c-details{
+    background-color: #FFD700;
+    color: black;
+    width:300px;
+    height:600px;
+    margin:21px;
+    padding:21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.review3{
+    height:600px;
+    width:300px;
+    margin-left: 199px;
+    color: aliceblue;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bring{
+    color:yellow;
+}
+.f-food{
+    background-color: #3C4048;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.icons{
+    width:50%;
+    margin:21px;
+    padding: 22px;
+    color:white;
+    font-size: 28px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.s-icons{
+    color:#FFD700;
+    margin-top:21px;
+}
+.menu{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-icons{
+    color: #FFD700;
+    margin: 18px;
+}
+.menu h2{
+    color:white;
+    margin-top:21px;
+}
+
+@media (max-width:800px){
+    .section-1{
+        width:100vw;
+        margin:0px;
+    }
+    .section-2{
+        width:100vw;
+        margin:0px;
+    }
+    .section-3{
+        width:100vw;
+        margin:0px;
+    }
+    .recipie{
+        flex-direction: column;
+    }
+    .hed{
+        width:100vw;
+        margin:auto;
+        padding:31px;
+    }
+    .img{
+        margin:auto;
+        margin-bottom: 28px;
+        width:80vw;
+        margin-top: 28px;
+    }
+    .des{
+        width:100vw;
+    }
+    .Breakfast{
+        width:80vw;
+        margin:auto;
+        margin-top:18px;
+    }
+    .Healthy{
+        width:80vw;
+        margin:auto;
+        margin-top:18px;
+        margin-bottom: 28px;
+    }
+    .f-food{
+        flex-direction: column;
+
+    }
+    .icons{
+        width:100vw;
+    }
+    .s-icons{
+        width:100vw;
+        display:flex;
+        /* flex-direction: column; */
+        /* justify-content: center;
+        align-items: center; */
+        margin-left: 104px;
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+    .fb{
+        margin:15px;
+    }
+    .menu{
+        flex-direction: column;
+        margin:auto;
+    }
+    .fresh1{
+        margin:auto;
+        padding:28px;
+        
+        
+    }
+    .fresh{
+        /* filter: blur(5px); */
+
+    }
+    .review1{
+        width:100vw;
+    }
+    .review2{
+        width:100vw;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .c-img{
+        width:80vw;
+    }
+    .c-details{
+        width:90vw;
+    }
+}
