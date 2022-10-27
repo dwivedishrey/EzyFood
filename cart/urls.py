@@ -8,7 +8,7 @@ urlpatterns = [
      path('cart' , cart , name="cart"),
     path("hotels/<str:pk>",hotels,name="hotels"),
     path("customize",customize,name="customize"),
-
+    path("bill",bill,name="bill"),
     
 ]
 

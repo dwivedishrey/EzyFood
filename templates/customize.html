@@ -13,29 +13,37 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        {%block content%}
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <form action="/homebill"  method="post">
+            {%csrf_token%}
     {%for roti in roti%} 
-
-        {{roti.name}}
+        <input type="radio" id="{{roti}}">
+        <label for="{{roti}}">{{roti.name}}</label>
+        
         <br>
         {%endfor%}
 
     
     <hr>
     {%for sabji in sabji%} 
+    <input type="radio" id="{{sabji}}">
+    <label for="{{sabji}}">{{sabji.name}}</label>
     
-    {{sabji.name}}
     <br>
     {%endfor%}
 
     <hr>
     {%for dal in dal%} 
-
-    {{dal.name}}
+    <input type="radio" id="{{dal}}">
+    <label for="{{dal}}">{{dal.name}}</label>
     <br>
     {%endfor%}
+    <button>Submit</button>
+        </form>
         <script src="" async defer></script>
+    {%endblock%}
     </body>
 </html>

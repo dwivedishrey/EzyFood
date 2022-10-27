@@ -241,10 +241,10 @@ body{
              <div>
                 <h1>want to order something !</h1>
                 <h2>login now</h2>
-                <form action="/otp" id="form" method='POST'>
+                <form action="" window.location.href = "/otp"; id="form" method='POST'>
                     {% csrf_token %}
                     {% comment %} <input type="text" class="input" id="username" placeholder="username" required> {% endcomment %}
-                    <input type="text" class="input" id="form" placeholder="mobile" required>
+                    <input type="text" class="input" id="form" placeholder="mobile" required name='mobile'>
                     <button class="input" id="logbtn">
                     LOGIN
                 </button>
