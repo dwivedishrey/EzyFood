@@ -1,0 +1,69 @@
+{% load static %}
+{% block content %}
+<style>
+.quantity{
+	display: inline-block;
+	font-weight: 700;
+	padding-right:10px;
+}
+  .chg-quantity{
+  	width: 12px;
+  	cursor: pointer;
+  	display: block;
+  	margin-top: 5px;
+  	transition:.1s;
+  }
+
+  .chg-quantity:hover{
+  	opacity: .6;
+  }
+
+
+
+</style>
+            <form method="POST">
+                {% csrf_token %}
+                    {% for app in roti %}
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ app.pk }}">
+                                    <label class="form-check-label">{{ app.name }}</label>
+                                    <p class="font-weight-bold pl-5">{{ app.price }}</p>
+
+
+
+
+                {% endfor %}
+
+
+                    {% for e in sabji %}
+
+
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ e.pk }}">
+                                    <label class="form-check-label">{{ e.name }}</label>
+
+                                    <p class="font-weight-bold pl-5">{{ e.price }}</p>
+
+
+
+                    {% endfor %}
+
+
+
+                    {% for d in dal %}
+
+
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ d.pk }}">
+                                    <label class="form-check-label">{{ d.name }}</label>
+
+                                <p class="font-weight-bold pl-5">{{ d.price }}</p>
+
+
+                    {% endfor %}
+
+
+
+
+
+                <button class="btn btn-dark mt-5">Place Order!</button>
+            </form>
+
+{% endblock content %}
